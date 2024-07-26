@@ -1,0 +1,230 @@
+#lesson h5
+	{
+		font-weight: bold;
+		color:red;
+		font-size:15px;
+	}
+
+#lesson h6{
+	font-weight: bolder;
+	color:black;
+	text-align:center;
+}
+#lesson2 img
+	{
+		width:500px;
+		height:250px;
+		margin:10px;
+	}
+#lesson li,ol
+	{
+		font-weight:bolder;
+	}
+#links li
+{
+	list-style-type:none;
+	color:#010CFD;
+}
+#links li a
+{
+	font-weight: bolder;
+	color:green;
+	text-decoration: none;
+}
+audio
+{
+	width:500px;
+}
+video
+{
+	width:500px;
+}
+#PrevNext button
+{
+	margin: 20px 100px;
+}
+#PrevNext a,i 
+{
+	text-decoration: none;
+	font-weight:bold;
+	font-size: 15px;
+}
+#links li a:hover
+{
+	color:red;
+}
+
+.contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0,0.4);
+}
+.contact-form {
+  width: 60%;
+  background:white;
+  position: relative;
+}
+
+form {
+  padding: 1rem;
+ z-index: 10; 
+}
+form img{
+  width:100px;
+}
+.title {
+  color: #000;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+.contact label i{
+  color: #FE047F;
+}
+.input {
+  width: 100%;
+  outline: none;
+  border: 1px ridge #7E1AB8;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0,0.4);
+  background: none;
+  padding: 0.6rem 1.2rem;
+  /*color: pink;*/
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.s ease;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 50px;
+  border-radius: 22px;
+  resize: none;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(-0.5rem);
+}
+
+  form .btn {
+  padding: 0.6rem 1.3rem;
+  height: 50px;
+  width:150px;
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  /*border: 2px solid black;*/
+  font-size: 1rem;
+  color:white;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+}
+
+form .btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+input:focus,textarea:focus{
+  border: 2px solid #FE047F;;
+/*  color:blue;
+*/}
+.input-container span {
+  position: absolute; /*place element to right of input area*/
+  top: 0;
+  left: 25px; /*moves the element 25px left from its ansistor*/
+  transform: translateY(-50%);/*center the span element in conjuncton with top0*/
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+/*  z-index: 500;*/
+}
+
+.input-container span:before,/* for background adjustment */
+.input-container span:after {
+  content: " ";
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+  height: 9px;
+  background-color:white;/* color */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 70%;
+}
+
+.input-container span:after {
+  right: 30%;
+}
+
+.input-container.focus label {
+  position: absolute;
+  top: 0;
+  color:#FE047F;
+  font-weight: bolder;
+  transform: translateY(-50%);
+  left: 40px;   /*all the properties of span element is applied to label*/
+  font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+ width: 50%;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+header{
+	width:300px;
+}
+#PrevNext button{
+	margin:0px 10px;
+}
+#lesson img
+{
+	width:300px;
+	height:auto;
+}
+#lesson iframe
+{
+	width:400px;
+}
+#lesson video,audio
+{
+	width:400px;
+}
+.contact  .input {
+    padding: 0.45rem 1.2rem;
+  }
+}
